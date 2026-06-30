@@ -1,22 +1,118 @@
 {
-  "de": {
-    "general": {
-      "search": {
-        "search": "Suche"
-      }
+  "general": {
+    "search": {
+      "search": "Suche",
+      "placeholder": "Unser Geschäft durchsuchen",
+      "submit": "Suchen",
+      "results_with_count": "{{ count }} Ergebnisse für \"{{ terms }}\"",
+      "no_results": "Keine Ergebnisse für \"{{ terms }}\" gefunden",
+      "title": "Suche",
+      "search_page": "Suche"
     },
-    "accessibility": {
-      "skip_to_text": "Zum Inhalt springen"
+    "pagination": {
+      "label": "Seitennavigation",
+      "page": "Seite",
+      "next": "Weiter",
+      "previous": "Zurück",
+      "of": "von"
     },
-    "customer": {
-      "account": {
-        "title": "Konto"
-      }
+    "social": {
+      "follow_on_social": "Folgen Sie uns",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "pinterest": "Pinterest",
+      "instagram": "Instagram",
+      "tiktok": "TikTok",
+      "youtube": "YouTube"
     },
-    "sections": {
-      "cart": {
-        "title": "Warenkorb"
-      }
+    "newsletter": {
+      "heading": "Abonnieren Sie unseren Newsletter",
+      "subheading": "Erhalten Sie die neuesten Updates zu neuen Produkten und bevorstehenden Angeboten",
+      "success": "Danke für Ihre Anmeldung!",
+      "button": "Abonnieren"
+    },
+    "404": {
+      "title": "Seite nicht gefunden",
+      "subtext": "Die gesuchte Seite existiert nicht.",
+      "link": "Weiter einkaufen"
+    },
+    "password_page": {
+      "opening_soon": "{{ shop_name }} wird bald eröffnet",
+      "password_placeholder": "Shop-Passwort eingeben",
+      "submit": "Eintreten",
+      "admin_link_html": "Sind Sie der Shop-Inhaber? <a href=\"{{ link }}\">Hier anmelden</a>"
+    }
+  },
+  "accessibility": {
+    "skip_to_text": "Zum Inhalt springen",
+    "close": "Schließen",
+    "loading": "Lädt...",
+    "previous": "Zurück",
+    "next": "Weiter",
+    "of": "von",
+    "announcement": "Ankündigung",
+    "refresh": "Aktualisieren",
+    "menu": "Menü"
+  },
+  "customer": {
+    "account": {
+      "title": "Konto",
+      "login": "Anmelden",
+      "logout": "Abmelden",
+      "register": "Konto erstellen",
+      "forgot_password": "Passwort vergessen?"
+    }
+  },
+  "sections": {
+    "cart": {
+      "title": "Warenkorb",
+      "empty": "Ihr Warenkorb ist leer",
+      "subtotal": "Zwischensumme",
+      "checkout": "Zur Kasse",
+      "continue_shopping": "Weiter einkaufen",
+      "remove": "Entfernen",
+      "quantity": "Menge",
+      "total": "Gesamt",
+      "taxes_and_shipping_at_checkout": "Steuern und Versand an der Kasse berechnet",
+      "free_shipping_notice_html": "Nur noch <strong>{{ amount }}</strong> bis zum kostenlosen Versand!",
+      "free_shipping_achieved": "Sie haben kostenlosen Versand freigeschaltet!"
+    },
+    "header": {
+      "menu": "Menü",
+      "cart": "Warenkorb ({{ count }})",
+      "search": "Suche",
+      "account": "Konto",
+      "wishlist": "Wunschliste"
+    },
+    "footer": {
+      "newsletter_heading": "Bleiben Sie verbunden",
+      "payment_methods": "Zahlungsmethoden",
+      "copyright": "© {{ year }} {{ shop_name }}. Alle Rechte vorbehalten."
+    },
+    "product": {
+      "add_to_cart": "In den Warenkorb",
+      "sold_out": "Ausverkauft",
+      "unavailable": "Nicht verfügbar",
+      "on_sale": "Angebot",
+      "from_price": "Ab {{ price }}",
+      "quantity": "Menge",
+      "description": "Beschreibung",
+      "details": "Details",
+      "shipping": "Versand & Rückgabe",
+      "reviews": "Bewertungen",
+      "related_products": "Das könnte Ihnen auch gefallen",
+      "sku": "Artikelnummer",
+      "vendor": "Marke",
+      "type": "Typ"
+    },
+    "collection": {
+      "title": "Kollektionen",
+      "sort_by": "Sortieren nach",
+      "filters": "Filter",
+      "clear_all": "Alle entfernen",
+      "apply": "Anwenden",
+      "products_count": "{{ count }} Produkte",
+      "no_products": "Keine Produkte gefunden"
     }
   }
 }

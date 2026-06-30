@@ -1,0 +1,49 @@
+{%- comment -%}
+  Gift card template
+{%- endcomment -%}
+
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ shop.name }} - Gift Card</title>
+  {{ 'style.css' | asset_url | stylesheet_tag }}
+  {{ content_for_header }}
+</head>
+<body class="template-gift-card">
+  <main class="gift-card" role="main">
+    <div class="gift-card__inner">
+      <h1 class="gift-card__title">{{ shop.name }} Gift Card</h1>
+      <div class="gift-card__image-wrapper">
+        <div class="gift-card__image-placeholder">
+          <svg width="200" height="120" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="5" width="190" height="110" rx="8" fill="#F5F1EA" stroke="#8B7355" stroke-width="2"/>
+            <text x="100" y="50" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="16" fill="#3D3530">Gift Card</text>
+            <text x="100" y="75" text-anchor="middle" font-family="Jost, sans-serif" font-size="12" fill="#8B7355">{{ shop.name }}</text>
+          </svg>
+        </div>
+      </div>
+      <div class="gift-card__amount">
+        {{ gift_card.balance | money }}
+      </div>
+      <p class="gift-card__code-label">Your gift card code:</p>
+      <p class="gift-card__code">{{ gift_card.code | format_code }}</p>
+      <div class="gift-card__qr" data-qr="{{ gift_card.qr_identifier }}"></div>
+      <a href="{{ shop.url }}" class="btn btn--primary gift-card__shop-link">
+        Continue shopping
+      </a>
+    </div>
+  </main>
+  <style>
+    .gift-card { display:flex; align-items:center; justify-content:center; min-height:100vh; padding:2rem; background:#F5F1EA; }
+    .gift-card__inner { text-align:center; max-width:500px; }
+    .gift-card__title { font-family:'Cormorant Garamond',serif; font-size:2rem; color:#3D3530; margin:0 0 1.5rem; }
+    .gift-card__image-wrapper { margin:1rem 0; }
+    .gift-card__amount { font-size:2rem; color:#8B7355; margin:1rem 0; }
+    .gift-card__code { font-size:1.5rem; letter-spacing:0.1em; padding:1rem; background:#fff; border:1px dashed #8B7355; margin:0.5rem 0 1.5rem; }
+    .gift-card__shop-link { display:inline-block; padding:0.875rem 2.5rem; background:#8B7355; color:#fff; text-decoration:none; border-radius:2px; }
+  </style>
+</body>
+</html>
