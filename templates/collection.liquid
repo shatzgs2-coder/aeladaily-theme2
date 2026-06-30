@@ -153,7 +153,7 @@
 
           {%- paginate collection.products by section.settings.products_per_page -%}
           <div class="product-grid collection-grid">
-            {-% for product in collection.products -%}
+            {%- for product in collection.products -%}
               <div class="product-card">
                 <a href="{{ product.url }}" class="product-card__link">
                   <div class="product-card__image-wrapper">
